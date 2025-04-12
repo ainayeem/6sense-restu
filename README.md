@@ -1,6 +1,4 @@
-# Softnio task
-
-### Live Site: [Softnio Resturant](https://softnio-resturant.netlify.app/)
+### Live Site: [View](https://6sense-restu.vercel.app/)
 
 ## Features
 
