@@ -1,8 +1,8 @@
-import bookTableBanner from "../../assets/images/book-table-banner.png";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import Datepicker from "react-tailwindcss-datepicker";
 import { toast } from "sonner";
+import bookTableBanner from "../../assets/images/book-table-banner.png";
 
 const BookTable = () => {
   const [value, setValue] = useState({
@@ -49,7 +49,7 @@ const BookTable = () => {
             // toast.success("Message Sent!");
           },
           (error) => {
-            toast.error(`Error: ${error.text}`);
+            // toast.error(`Error: ${error.text}`);
           }
         );
     };
@@ -57,7 +57,7 @@ const BookTable = () => {
     toast.promise(sendEmail(), {
       loading: "Booking Table...",
       success: "Reservation Complete!",
-      error: (error) => `Error: ${error}`,
+      error: (error) => `Complete: ${error}`,
     });
   };
   const formatDate = (date) => {
